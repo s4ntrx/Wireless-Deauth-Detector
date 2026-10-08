@@ -4,7 +4,6 @@ Passive 802.11 deauthentication attack detector. It listens on a monitor-mode in
 
 It never transmits. There is no injection code in this repository.
 
-Based on the project outline in [Wireless.Deauth.Detector](https://github.com/designredevops/Cybersecurity-Projects/blob/main/SYNOPSES/intermediate/Wireless.Deauth.Detector.md), with several deliberate deviations listed under [Design decisions](#design-decisions).
 
 ## Interface
 
@@ -140,22 +139,7 @@ Sample alert from the bundled capture:
 - Reason codes 2 and 7 are supporting evidence only. Attack tools can emit any code, and legitimate APs emit them too.
 - Disassociation frames are handled like deauth frames because they cause the same disconnects.
 
-## Layout
 
-```
-src/deauth_detector/
-  capture.py   scapy parsing, pcap reader, live sniffer, channel hopper
-  window.py    sliding window with incremental counters
-  detector.py  rules, spoof fingerprints, incident lifecycle
-  tracker.py   per-client impact and reconnect tracking
-  alerts.py    console, JSONL, webhook sinks
-  timeline.py  builds incident timelines from the JSONL log
-  vendors.py   MAC address to organization lookup
-  stats.py     capture counters for the dashboard and summary
-  ui.py        banner, theme, panels, tables, live dashboard
-  cli.py       monitor, analyze, timeline, vendor commands
-tests/         unit and end-to-end tests built from synthetic frames
-docs/DEFENSES.md
 ```
 
 ## Development
@@ -170,6 +154,3 @@ Tests build frames with scapy and write them to temporary files. Nothing is tran
 
 Only monitor networks you own or have written permission to assess. Passive capture of other people's wireless traffic is regulated or illegal in many jurisdictions.
 
-## License
-
-MIT
