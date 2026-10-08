@@ -65,7 +65,8 @@ Alerting is graduated: single frame is log only, a pattern opens a WARNING incid
 ```bash
 git clone https://github.com/s4ntrx/deauth-detector.git
 cd deauth-detector
-python3 -m venv .venv && source .venv/bin/activate
+python3 -m venv .venv
+.venv/bin/activate
 pip install -e ".[dev]"
 ```
 
