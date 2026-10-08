@@ -1,4 +1,4 @@
-# deauth-detector
+# Wireless Deauth Detector
 
 Passive 802.11 deauthentication attack detector. It listens on a monitor-mode interface (or replays a pcap), groups suspicious frames into incidents, fingerprints spoofed frames, tracks which clients are hit, and writes a forensic log you can turn into a timeline.
 
