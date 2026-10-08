@@ -1,0 +1,16 @@
+[detector]
+window_seconds = 10.0
+warning_frames = 10
+critical_frames = 100
+client_repeat_frames = 5
+multi_source_min = 3
+spoof_min_frames = 3
+suspicious_reasons = [2, 7]
+incident_quiet_seconds = 30.0
+reconnect_window_seconds = 30.0
+rssi_deviation_db = 15.0
+sequence_gap = 512
+beacon_max_age_seconds = 10.0
+reference_rssi_dbm = -40.0
+path_loss_exponent = 3.0
+known_aps = []
