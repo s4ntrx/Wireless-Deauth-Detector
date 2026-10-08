@@ -10,7 +10,7 @@ It never transmits. There is no injection code in this repository.
 Running `deauth-detector` with no arguments prints the banner and help:
 
 <p align="center">
-  <img src="./assets/deauth-detector.png" alt="Deauth Detector v0.2.0 screenshot" width="700">
+  <img src="./assets/deauth-detector.png" alt="Deauth Detector v0.2.0 screenshot" width="500">
 </p>
 
 - Alerts render as severity-colored panels. Rule names come with a plain-language explanation and concrete next steps.
