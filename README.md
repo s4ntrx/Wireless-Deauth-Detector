@@ -9,17 +9,9 @@ It never transmits. There is no injection code in this repository.
 
 Running `deauth-detector` with no arguments prints the banner and help:
 
-```
-         __ __        __
-   _____/ // / ____  / /_______  __
-  / ___/ // /_/ __ \/ __/ ___/ |/_/
- (__  )__  __/ / / / /_/ /  _>  <
-/____/  /_/ /_/ /_/\__/_/  /_/|_|
-
-DEAUTH DETECTOR   v0.2.0
-Passive 802.11 deauthentication monitor
-github.com/s4ntrx
-```
+<p align="center">
+  <img src="./assets/deauth-detector.png" alt="Deauth Detector v0.2.0 screenshot" width="700">
+</p>
 
 - Alerts render as severity-colored panels. Rule names come with a plain-language explanation and concrete next steps.
 - `monitor` shows a live dashboard (status, deauth rate, frames seen, uptime, last alert) above the alert stream.
